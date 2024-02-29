@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExErCiSe</title>
+</head>
+<style>
+    body {
+        background-image: url(img/R\ \(1\).jpeg);
+        color: white;
+        margin-left: 60px;
+    }
+
+    p {
+        font-size: 2.3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 240px auto 20px auto;
+    }
+
+    input {
+        height: 7vh;
+        font-size: 1.1em;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    .container-botones{
+        display: flex;
+        gap: 2;
+    }    
+    button {
+        height: 100px;
+        width: 14vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2em;
+        border-radius: 8px;
+        font-size: 1.5em;
+    }
+    #reiniciar{
+        margin-left: 60px;
+    }
+</style>
+
+<body>
+    <h1 style="text-transform: uppercase; font-size:5.5em">Game - TesT</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <input id="valorUsuario" type="number">
+    <div class="container-botones">
+        <button onclick="inputCheck()" class="container-button">Intentar</button>
+        <button onclick="reiniciarJuego()" class="container-button" id="reiniciar" disabled>Nuevo Juego</button>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
