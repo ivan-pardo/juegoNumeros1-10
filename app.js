@@ -28,14 +28,14 @@ function inputCheck() {
     let input = parseInt(document.getElementById('valorUsuario').value);
 
     if (input === numeroSecreto) {
-        texto('p', `Goood ${intento} ${(intento === 1) ? 'vez' : 'veces'}`);
+        texto('p', ` MUY BIEN, tuvo ${intento} ${(intento === 1) ? 'intento' : 'intentos'}`);
         document.getElementById('reiniciar').removeAttribute('disabled')
 
     } else {
         if (input < numeroSecreto) {
-            texto('p', 'subale mlp')
+            texto('p', 'El numero es bajo. AUMENTE')
         } else {
-            texto('p', 'bajele perro')
+            texto('p', 'El numero es alto. DISMINUYA')
         }
     }
     intento++;
@@ -47,7 +47,7 @@ function limipiarInput() {
 
 function reiniciarJuego() {
     if (listaNumeros.length > maximoIntento) {
-        texto('p','Bien perrillo... pero llegaste al FIN')
+        texto('p','Excelente! FIN DEL JUEGO')
         document.getElementById('reiniciar').setAttribute('disabled', 'true')
     } else {
 
